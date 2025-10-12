@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large model/checkpoint files
+models/*.pth
+models/*.h5
+models/efficientnetb3_deepskin_semantic.h5
+models/healing_predictor.pth
+
+# Data
+woundsdata/
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.swp
+

@@ -1,0 +1,4 @@
+day,image,mask,timestamp
+0,wound_data/wound_001/images/day_0.png,wound_data/wound_001/masks/day_0_mask.png,2025-10-12 09:23:55
+1,wound_data/wound_001/images/day_1.png,wound_data/wound_001/masks/day_1_mask.png,2025-10-12 09:25:55
+2,wound_data/wound_001/images/day_2.png,wound_data/wound_001/masks/day_2_mask.png,2025-10-12 09:28:04
