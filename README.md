@@ -19,22 +19,22 @@ The system takes a time-series of wound photographs and outputs:
 ---
 
 ## 🧱 Project Structure
-
 woundtracker/
 │
-├── Deepskin/ # DeepSkin segmentation model (TensorFlow model code)
-├── models/
-│ ├── healing.py # PyTorch healing regression model (ResNet18 backbone)
+├── Deepskin/                     # DeepSkin segmentation model (TensorFlow)
+│   └── models/
 │
-├── app.py # (Optional) Inference or API app
-├── predictor.py # Converts segmentation masks → healing_data.csv
-├── train_healing_model.py # Trains the HealingPredictor model
-├── utils.py # Helper functions
+├── healing.py                    # PyTorch healing regression model (ResNet18)
 │
-├── requirements.txt # Environment dependencies
-├── README.md # This file
+├── app.py                        # inference app
+├── predictor.py                  # Converts segmentation masks → healing_data.csv
+├── train_healing_model.py        # Trains the HealingPredictor model
+├── utils.py                      # Helper functions
 │
-└── wounds_sample/ # Example dataset structure (dummy images)
+├── requirements.txt              # Dependencies
+├── README.md                     # Project documentation
+│
+└── wounds_sample/                # Example dataset (dummy images)
 
 
 ---
@@ -85,28 +85,18 @@ Run:
 python prepare_dataset.py
 
 makefile
-Copy code
 
 Produces:
 healing_data.csv
 
-yaml
-Copy code
-
 Then train:
 python train_healing_model.py
-
-yaml
-Copy code
 
 ---
 
 ## ⚙️ Installation
 
 pip install -r requirements.txt
-
-yaml
-Copy code
 
 ---
 
@@ -115,14 +105,9 @@ Copy code
 ### **Step 1 — Prepare data**
 python prepare_dataset.py
 
-markdown
-Copy code
 
 ### **Step 2 — Train Healing Predictor**
 python train_healing_model.py
-
-yaml
-Copy code
 
 ---
 
@@ -133,9 +118,6 @@ Weights are **not included** in this repository due to size.
 Add your model weights to:
 models/unet_model.pth
 models/healing_predictor.pth
-
-yaml
-Copy code
 
 ---
 
