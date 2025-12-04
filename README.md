@@ -25,8 +25,6 @@ woundtracker/
 ├── Deepskin/                     # DeepSkin segmentation model (TensorFlow)
 │   └── models/
 │
-├── healing.py                    # PyTorch healing regression model (ResNet18)
-│
 ├── app.py                        # inference app
 ├── predictor.py                  # Converts segmentation masks → healing_data.csv
 ├── train_healing_model.py        # Trains the HealingPredictor model
