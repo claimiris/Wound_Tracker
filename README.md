@@ -19,6 +19,7 @@ The system takes a time-series of wound photographs and outputs:
 ---
 
 ## 🧱 Project Structure
+```
 woundtracker/
 │
 ├── Deepskin/                     # DeepSkin segmentation model (TensorFlow)
@@ -36,7 +37,7 @@ woundtracker/
 │
 └── wounds_sample/                # Example dataset (dummy images)
 
-
+```
 ---
 
 ## 📊 Pipeline Details
